@@ -9,7 +9,7 @@ on:
     branches:
       - main
     paths:
-      - 'build/Xwrt/relevance/start'
+      - 'build/Lienol/relevance/start'
 
 env:
   GIT_REPOSITORY: ${{github.repository}}
@@ -30,7 +30,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-       target: [Xwrt]
+       target: [Lienol]
 
     steps:
     - name: 释放Ubuntu磁盘空间
